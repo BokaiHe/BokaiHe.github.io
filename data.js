@@ -86,7 +86,7 @@ window.SITE = {
     {
       repo: 'sentinel2-water-segmentation',
       title: { en: 'Satellite Water Segmentation for Flood Monitoring', zh: '卫星水体分割与洪涝监测' },
-      meta: { en: 'Independent research · 2026', zh: '独立研究 · 2026' },
+      meta: { en: 'Independent research · Columbia University · 2026', zh: '独立研究 · 哥伦比亚大学 · 2026' },
       desc: {
         en: 'Does near-infrared help a U-Net find water? On Sen1Floods11, adding NIR raised pooled water IoU from 0.37 to 0.72 (single seed). Applied to NYC Sentinel-2 imagery, RGB+NIR detected water at 9 of 13 FloodNet-observed wet site–dates versus 1 for RGB.',
         zh: '近红外能否帮助 U-Net 识别水体？在 Sen1Floods11 上，加入近红外使整体水体 IoU 从 0.37 提高到 0.72（单个随机种子）。应用到纽约 Sentinel-2 影像时，在 13 个 FloodNet 观测到积水的站点-日期中，RGB+NIR 检出 9 个，RGB 只有 1 个。',
@@ -98,7 +98,7 @@ window.SITE = {
     {
       repo: 'rain-to-ponding',
       title: { en: 'Rain to Ponding: Manhattan Street Ponding', zh: 'Rain to Ponding：曼哈顿街道积水' },
-      meta: { en: 'Independent research · 2026', zh: '独立研究 · 2026' },
+      meta: { en: 'Independent research · Columbia University · 2026', zh: '独立研究 · 哥伦比亚大学 · 2026' },
       desc: {
         en: 'Where does rainfall collect on Manhattan streets? A local-inertia surface-flow model on a 5 m grid (NOAA terrain, building footprints, assumed drainage) placed ponding within 10 m of 4 of 5 usable FloodNet sensors but underestimated depth (e.g., 8.0 vs 22.7 cm).',
         zh: '降雨会在曼哈顿哪些街道积水？基于 5 m 网格的 local-inertia 地表流模型（NOAA 地形、建筑轮廓、假设排水能力）在 5 个可用 FloodNet 传感器中的 4 个 10 m 范围内算出了积水，但低估了水深（如 8.0 cm 对实测 22.7 cm）。',
@@ -111,7 +111,7 @@ window.SITE = {
     {
       repo: 'nyc-solar-studio',
       title: { en: 'NYC Solar Studio: 3D Rooftop PV Layout and Yield', zh: 'NYC Solar Studio：三维屋顶光伏排布与发电量' },
-      meta: { en: 'Independent extension of a course project · 2026', zh: '课程项目的独立延伸 · 2026' },
+      meta: { en: 'Course project and independent extension · Columbia University · 2026', zh: '课程项目与独立延伸 · 哥伦比亚大学 · 2026' },
       desc: {
         en: 'Extends rooftop PV assessment to NYC LoD2 3D buildings: a U-Net detects rooftop obstacles (pixel F1 0.43, object recall 0.49 against automatic LiDAR labels), layouts respect setbacks and shading from neighbors within 200 m, and per-panel annual energy uses typical-year weather (about 1,360 kWh/kWp for an unshaded panel).',
         zh: '把屋顶光伏评估扩展到纽约 LoD2 三维建筑：U-Net 识别屋顶障碍物（相对 LiDAR 自动标签，像素 F1 0.43，目标召回 0.49）；排布考虑退界和 200 m 内邻楼遮挡；按典型气象年估算每块组件的年发电量（无遮挡时约 1,360 kWh/kWp）。',
@@ -124,7 +124,7 @@ window.SITE = {
     {
       repo: 'Estimation-of-Rooftop-Solar-Photovoltaic-Potential-based-on-Deep-Learning',
       title: { en: 'Rooftop PV Potential with Deep Learning', zh: '基于深度学习的屋顶光伏潜力估算' },
-      meta: { en: 'Columbia course project with Pina Pi and Tiancheng Gu · 2024', zh: '哥大课程项目，与 Pina Pi、Tiancheng Gu 合作 · 2024' },
+      meta: { en: 'Course project · Columbia University · with Pina Pi and Tiancheng Gu · 2024', zh: '课程项目 · 哥伦比亚大学 · 与 Pina Pi、Tiancheng Gu 合作 · 2024' },
       desc: {
         en: 'A U-Net on RGB and near-infrared imagery segments rooftops (IoU 0.61, precision 0.79); roof slope, aspect and suitability scoring then give PV potential, annual energy and economic benefit.',
         zh: '用 RGB 与近红外影像训练 U-Net 分割屋顶（IoU 0.61，精确率 0.79），再结合坡度、朝向和适宜性评分估算光伏潜力、年发电量和经济收益。',
@@ -138,7 +138,7 @@ window.SITE = {
     {
       repo: 'ocean-carbon-sampling',
       title: { en: 'Ocean Carbon Sampling', zh: '海洋碳采样与观测网络设计' },
-      meta: { en: 'Course project with Prof. Galen McKinley, independently extended · 2025–2026', zh: 'Prof. Galen McKinley 课程项目的独立延伸 · 2025–2026' },
+      meta: { en: 'Course project and independent extension · Columbia University · Prof. Galen McKinley · 2025–2026', zh: '课程项目与独立延伸 · 哥伦比亚大学 · Prof. Galen McKinley · 2025–2026' },
       desc: {
         en: 'Does where we measure ocean CO₂ change reconstruction error? In simulation experiments with CMIP6 truth and SOCAT observing support, historical-density sampling raised MAE by 27.3% versus random at 5,000 samples; adding 1,000 gap-targeted observations cut RMSE by 3.126 µatm, 0.462 µatm more than random additions (five seeds).',
         zh: '观测位置会影响海洋 CO₂ 重建误差吗？以 CMIP6 为真值、SOCAT 为采样格局的模拟实验中，5,000 个样本时按历史观测密度采样比随机采样的 MAE 高 27.3%；补充 1,000 个空白区观测使 RMSE 降低 3.126 µatm，比随机补充多降 0.462 µatm（5 个随机种子）。',
@@ -151,7 +151,7 @@ window.SITE = {
     {
       repo: 'ENSO-Storm-Atlas',
       title: { en: 'North Atlantic Hurricanes and ENSO', zh: '北大西洋飓风与 ENSO' },
-      meta: { en: 'Course project with Prof. Galen McKinley (team lead), independently extended · 2025–2026', zh: 'Prof. Galen McKinley 课程项目（组长）的独立延伸 · 2025–2026' },
+      meta: { en: 'Course project (team lead) and independent extension · Columbia University · Prof. Galen McKinley · 2025–2026', zh: '课程项目（组长）与独立延伸 · 哥伦比亚大学 · Prof. Galen McKinley · 2025–2026' },
       desc: {
         en: 'How do El Niño and La Niña change Atlantic storms? With whole-season permutation tests on 979 IBTrACS storms, La Niña seasons averaged 16.1 named storms per year versus 11.0 in El Niño seasons (1966–2025), and the track-centroid shift splits into type-mix and within-type parts.',
         zh: '厄尔尼诺和拉尼娜如何改变大西洋风暴？对 979 个 IBTrACS 风暴按整季做置换检验，1966–2025 年拉尼娜季平均每年 16.1 个命名风暴，厄尔尼诺季 11.0 个；路径中心偏移可分解为类型构成变化和类型内部位移。',
@@ -165,7 +165,7 @@ window.SITE = {
     {
       repo: 'BESS-Twin',
       title: { en: 'BESS Twin: Battery Storage Dispatch Simulation', zh: 'BESS Twin：储能调度模拟' },
-      meta: { en: 'Started during the teaching assistantship, developed further afterward · 2026', zh: '助教期间开始开发，之后继续完善 · 2026' },
+      meta: { en: 'Started during the teaching assistantship · Columbia University · 2026', zh: '助教期间开始开发 · 哥伦比亚大学 · 2026' },
       desc: {
         en: 'A minute-resolution simulation of a renewable energy park built to show how battery storage operates: peak shaving first, periodic state of charge, and separate accounting of unserved energy and curtailment so that design comparisons stay fair.',
         zh: '按分钟模拟新能源园区，用来展示储能如何运行：优先削峰，保持周期性荷电状态，并把缺电量和弃电分开统计，使不同设计方案的对比公平。',
@@ -180,7 +180,7 @@ window.SITE = {
   research: [
     {
       title: { en: 'Uncertainty-Aware Probabilistic Hyperspectral Unmixing', zh: '考虑不确定性的概率高光谱解混' },
-      role: { en: 'Graduate Researcher, Columbia University · Advisor: Dr. Conrad M. Albrecht', zh: '研究生研究员，哥伦比亚大学 · 导师：Dr. Conrad M. Albrecht' },
+      role: { en: 'Graduate research · Columbia University · Advisor: Dr. Conrad M. Albrecht', zh: '研究生科研 · 哥伦比亚大学 · 导师：Dr. Conrad M. Albrecht' },
       date: { en: 'Feb 2025 – Aug 2026', zh: '2025.02 – 2026.08' },
       text: {
         en: 'Probabilistic linear mixing with wavelength-wise Gaussian endmembers (NumPy); 72-species tropical tree library and EnMAP crown spectra; across all 2,556 species pairs, spectral separability and measurement uncertainty jointly determine reliability. Extended to roof materials: added SWIR bands reduced recovery error, while MESMA kept lower mean error.',
@@ -189,7 +189,7 @@ window.SITE = {
     },
     {
       title: { en: 'Uncertainty-Aware Rooftop PV Capacity Estimation under Spatial Shift', zh: '空间偏移下考虑不确定性的屋顶光伏容量估算' },
-      role: { en: 'Independent research', zh: '独立研究' },
+      role: { en: 'Independent research · Columbia University', zh: '独立研究 · 哥伦比亚大学' },
       date: { en: 'Jan 2026 – Aug 2026', zh: '2026.01 – 2026.08' },
       text: {
         en: 'BDAPPV (France): DeepLabV3 ensemble, projected-area capacity, quality-based abstention and split-conformal intervals, frozen before testing. Across 13 unseen departments, 0.270 kWp MAE and 89.74% coverage for nominal 90% intervals (3.5% abstained), but only 83% for 4–9 kWp and 42% for 9–36 kWp systems.',
@@ -198,7 +198,7 @@ window.SITE = {
     },
     {
       title: { en: 'NYC Urban Flooding: Satellite Water Detection and Street-Ponding Modeling', zh: '纽约城市洪涝：卫星水体识别与街道积水建模' },
-      role: { en: 'Independent research', zh: '独立研究' },
+      role: { en: 'Independent research · Columbia University', zh: '独立研究 · 哥伦比亚大学' },
       date: { en: 'Jan 2026 – Aug 2026', zh: '2026.01 – 2026.08' },
       text: {
         en: 'Adding NIR raised pooled water IoU from 0.37 to 0.72 on Sen1Floods11; in NYC, RGB+NIR detected 9 of 13 FloodNet-observed wet site–dates versus 1 for RGB. A 5 m local-inertia flow model placed ponding near 4 of 5 sensors but underestimated depth.',
@@ -207,7 +207,7 @@ window.SITE = {
     },
     {
       title: { en: 'Rooftop Solar Potential: From Segmentation to 3D Layout and Yield', zh: '屋顶太阳能潜力：从分割到三维排布与发电量' },
-      role: { en: 'Columbia course project, independently extended', zh: '哥大课程项目，独立延伸' },
+      role: { en: 'Course project and independent extension · Columbia University', zh: '课程项目与独立延伸 · 哥伦比亚大学' },
       date: { en: 'Sep 2024 – 2026', zh: '2024.09 – 2026' },
       text: {
         en: 'Course U-Net for RGB+NIR rooftop segmentation (IoU 0.61); extended to NYC LoD2 buildings with LiDAR-labeled obstacle detection, shading-aware layouts and per-panel annual energy (~1,360 kWh/kWp unshaded).',
@@ -216,7 +216,7 @@ window.SITE = {
     },
     {
       title: { en: 'Ocean Surface CO₂ Reconstruction and Observing-Network Design', zh: '海洋表层 CO₂ 重建与观测网络设计' },
-      role: { en: 'Course project with Prof. Galen McKinley, Columbia University; independently extended', zh: 'Prof. Galen McKinley 课程项目（哥伦比亚大学），独立延伸' },
+      role: { en: 'Course project and independent extension · Columbia University · Prof. Galen McKinley', zh: '课程项目与独立延伸 · 哥伦比亚大学 · Prof. Galen McKinley' },
       date: { en: 'Feb 2025 – Aug 2026', zh: '2025.02 – 2026.08' },
       text: {
         en: 'Simulation experiments with CMIP6 truth and SOCAT observing support: historical-density sampling raised MAE by 27.3% versus random; 1,000 gap-targeted additions cut RMSE by 3.126 µatm, 0.462 µatm more than random additions (five seeds).',
@@ -225,7 +225,7 @@ window.SITE = {
     },
     {
       title: { en: 'Off-Site Ambient Temperature Bias in PV Performance Estimation', zh: '光伏性能估算中的场外环境温度偏差' },
-      role: { en: 'Independent critical review', zh: '独立综述' },
+      role: { en: 'Independent review · Columbia University', zh: '独立综述 · 哥伦比亚大学' },
       date: { en: 'Jan 2026 – Aug 2026', zh: '2026.01 – 2026.08' },
       text: {
         en: 'Semi-systematic review of 205 appraised full texts; found no support for a universal station-distance threshold or globally superior temperature product, and proposed a layered framework linking representativeness, thermal–electrical propagation, correction and validation. Review manuscript prepared.',
@@ -234,7 +234,7 @@ window.SITE = {
     },
     {
       title: { en: 'North Atlantic Hurricane Tracks and ENSO', zh: '北大西洋飓风路径与 ENSO' },
-      role: { en: 'Course project with Prof. Galen McKinley (team lead); independently extended', zh: 'Prof. Galen McKinley 课程项目（组长），独立延伸' },
+      role: { en: 'Course project (team lead) and independent extension · Columbia University · Prof. Galen McKinley', zh: '课程项目（组长）与独立延伸 · 哥伦比亚大学 · Prof. Galen McKinley' },
       date: { en: 'Feb 2025 – Aug 2026', zh: '2025.02 – 2026.08' },
       text: {
         en: 'Course team found about 59% higher Category 3–5 frequency in warm AMO phases (association). Independent rebuild on 979 storms: 16.1 vs 11.0 named storms per year in La Niña vs El Niño seasons (1966–2025), with the track shift decomposed into type-mix and within-type parts.',

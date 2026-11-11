@@ -113,8 +113,8 @@ window.SITE = {
       title: { en: 'NYC Solar Studio: 3D Rooftop PV Layout and Yield', zh: 'NYC Solar Studio：三维屋顶光伏排布与发电量' },
       meta: { en: 'Independent extension of a course project · 2026', zh: '课程项目的独立延伸 · 2026' },
       desc: {
-        en: 'Extends rooftop PV assessment to NYC LoD2 3D buildings: a U-Net detects rooftop obstacles (pixel F1 0.43, object recall 0.49 against automatic LiDAR labels), layouts respect setbacks and shading from neighbors within 200 m, and per-panel annual energy uses typical-year weather (~1,360 kWh/kWp unshaded, consistent with PVWatts).',
-        zh: '把屋顶光伏评估扩展到纽约 LoD2 三维建筑：U-Net 识别屋顶障碍物（相对 LiDAR 自动标签，像素 F1 0.43，目标召回 0.49）；排布考虑退界和 200 m 内邻楼遮挡；按典型气象年估算每块组件的年发电量（无遮挡约 1,360 kWh/kWp，与 PVWatts 一致）。',
+        en: 'Extends rooftop PV assessment to NYC LoD2 3D buildings: a U-Net detects rooftop obstacles (pixel F1 0.43, object recall 0.49 against automatic LiDAR labels), layouts respect setbacks and shading from neighbors within 200 m, and per-panel annual energy uses typical-year weather (about 1,360 kWh/kWp for an unshaded panel).',
+        zh: '把屋顶光伏评估扩展到纽约 LoD2 三维建筑：U-Net 识别屋顶障碍物（相对 LiDAR 自动标签，像素 F1 0.43，目标召回 0.49）；排布考虑退界和 200 m 内邻楼遮挡；按典型气象年估算每块组件的年发电量（无遮挡时约 1,360 kWh/kWp）。',
       },
       tags: ['LoD2', 'U-Net', 'Shading', 'PV yield'],
       demo: 'https://bokaihe.github.io/nyc-solar-studio/',

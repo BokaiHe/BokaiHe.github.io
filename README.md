@@ -1,11 +1,9 @@
-# BokaiHe.github.io
+# Bokai He
 
-Personal site of Bokai He. Plain static HTML/CSS/JS, no build step.
+I work on remote sensing and environmental machine learning, with a focus on uncertainty and on whether models still hold when the place or the data change. My main project was probabilistic hyperspectral unmixing of tropical tree species. Other work covers rooftop solar capacity, urban flooding and ocean carbon observing design.
 
-- **Content:** edit `data.js` (profile, contact, projects, research, teaching, education, skills). Every text field is `{ en, zh }`.
-- **Project media:** `assets/projects/` — a light poster (`poster`) and an optional animated preview (`anim`) that loads only on hover or tap.
-- **Detail pages:** give a project an `id` and a `detail` object (`intro`, `steps`, `findings`, `figures`, `note`); its card then links to `project.html?id=<id>`.
-- **Typography:** Inter + Noto Sans SC (Google Fonts). Use only the `--text-*`, `--weight-*` and `--leading-*` tokens at the top of `style.css`; don't add raw pixel sizes.
-- **After editing CSS/JS:** bump the `?v=` number on the `<link>`/`<script>` tags in `index.html` and `project.html` so browsers fetch the new files.
-- **CV download:** set `profile.cv` in `data.js` to a PDF path once a final CV is added.
-- **Run locally:** `python -m http.server 8095` in this folder, then open http://localhost:8095.
+M.S. in Earth and Environmental Engineering, Columbia University (2026) · B.Sc. in Environmental Science, Beijing Normal-Hong Kong Baptist University (2024)
+
+- Website: [bokaihe.github.io](https://bokaihe.github.io/)
+- Email: [bh2954@columbia.edu](mailto:bh2954@columbia.edu)
+- LinkedIn: [linkedin.com/in/bokai-he-2230b3328](https://www.linkedin.com/in/bokai-he-2230b3328)

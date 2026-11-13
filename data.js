@@ -88,8 +88,8 @@ window.SITE = {
       title: { en: 'Satellite Water Segmentation for Flood Monitoring', zh: '卫星水体分割与洪涝监测' },
       meta: { en: 'Independent research · Columbia University · 2026', zh: '独立研究 · 哥伦比亚大学 · 2026' },
       desc: {
-        en: 'Does near-infrared help a U-Net find water? On Sen1Floods11, adding NIR raised pooled water IoU from 0.37 to 0.72 (single seed). Applied to NYC Sentinel-2 imagery, RGB+NIR detected water at 9 of 13 FloodNet-observed wet site–dates versus 1 for RGB.',
-        zh: '近红外能否帮助 U-Net 识别水体？在 Sen1Floods11 上，加入近红外使整体水体 IoU 从 0.37 提高到 0.72（单个随机种子）。应用到纽约 Sentinel-2 影像时，在 13 个 FloodNet 观测到积水的站点-日期中，RGB+NIR 检出 9 个，RGB 只有 1 个。',
+        en: 'Does near-infrared help a U-Net find water? On Sen1Floods11, adding NIR raised water IoU from 0.37 to 0.72. Applied to NYC Sentinel-2 imagery, RGB+NIR detected water at 9 of 13 FloodNet-observed wet site–dates versus 1 for RGB.',
+        zh: '近红外能否帮助 U-Net 识别水体？在 Sen1Floods11 上，加入近红外使水体 IoU 从 0.37 提高到 0.72。应用到纽约 Sentinel-2 影像时，在 13 个 FloodNet 观测到积水的站点-日期中，RGB+NIR 检出 9 个，RGB 只有 1 个。',
       },
       tags: ['U-Net', 'Sentinel-2', 'Sen1Floods11', 'FloodNet'],
       poster: 'sentinel2-water-segmentation.png',
@@ -100,8 +100,8 @@ window.SITE = {
       title: { en: 'Rain to Ponding: Manhattan Street Ponding', zh: 'Rain to Ponding：曼哈顿街道积水' },
       meta: { en: 'Independent research · Columbia University · 2026', zh: '独立研究 · 哥伦比亚大学 · 2026' },
       desc: {
-        en: 'Where does rainfall collect on Manhattan streets? A local-inertia surface-flow model on a 5 m grid (NOAA terrain, building footprints, assumed drainage) placed ponding within 10 m of 4 of 5 usable FloodNet sensors but underestimated depth (e.g., 8.0 vs 22.7 cm).',
-        zh: '降雨会在曼哈顿哪些街道积水？基于 5 m 网格的 local-inertia 地表流模型（NOAA 地形、建筑轮廓、假设排水能力）在 5 个可用 FloodNet 传感器中的 4 个 10 m 范围内算出了积水，但低估了水深（如 8.0 cm 对实测 22.7 cm）。',
+        en: 'Where does rainfall collect on Manhattan streets? A local-inertia surface-flow model on a 5 m grid (NOAA terrain, building footprints, drainage capacity) placed ponding within 10 m of 4 of 5 FloodNet sensors but underestimated depth (e.g., 8.0 vs 22.7 cm).',
+        zh: '降雨会在曼哈顿哪些街道积水？基于 5 m 网格的 local-inertia 地表流模型（NOAA 地形、建筑轮廓、排水能力）在 5 个 FloodNet 传感器中的 4 个 10 m 范围内算出了积水，但低估了水深（如 8.0 cm 对实测 22.7 cm）。',
       },
       tags: ['Surface-flow model', 'Urban flooding', 'FloodNet'],
       demo: 'https://bokaihe.github.io/rain-to-ponding/',
@@ -113,8 +113,8 @@ window.SITE = {
       title: { en: 'NYC Solar Studio: 3D Rooftop PV Layout and Yield', zh: 'NYC Solar Studio：三维屋顶光伏排布与发电量' },
       meta: { en: 'Course project and independent extension · Columbia University · 2026', zh: '课程项目与独立延伸 · 哥伦比亚大学 · 2026' },
       desc: {
-        en: 'Extends rooftop PV assessment to NYC LoD2 3D buildings: a U-Net detects rooftop obstacles (pixel F1 0.43, object recall 0.49 against automatic LiDAR labels), layouts respect setbacks and shading from neighbors within 200 m, and per-panel annual energy uses typical-year weather (about 1,360 kWh/kWp for an unshaded panel).',
-        zh: '把屋顶光伏评估扩展到纽约 LoD2 三维建筑：U-Net 识别屋顶障碍物（相对 LiDAR 自动标签，像素 F1 0.43，目标召回 0.49）；排布考虑退界和 200 m 内邻楼遮挡；按典型气象年估算每块组件的年发电量（无遮挡时约 1,360 kWh/kWp）。',
+        en: 'Extends rooftop PV assessment to NYC LoD2 3D buildings: a U-Net detects rooftop obstacles (pixel F1 0.43, object recall 0.49 against LiDAR-derived labels), layouts respect setbacks and shading from neighbors within 200 m, and per-panel annual energy uses typical-year weather (about 1,360 kWh/kWp for an unshaded panel).',
+        zh: '把屋顶光伏评估扩展到纽约 LoD2 三维建筑：U-Net 识别屋顶障碍物（以 LiDAR 生成的标签为参照，像素 F1 0.43，目标召回 0.49）；排布考虑退界和 200 m 内邻楼遮挡；按典型气象年估算每块组件的年发电量（无遮挡时约 1,360 kWh/kWp）。',
       },
       tags: ['LoD2', 'U-Net', 'Shading', 'PV yield'],
       demo: 'https://bokaihe.github.io/nyc-solar-studio/',
@@ -140,8 +140,8 @@ window.SITE = {
       title: { en: 'Ocean Carbon Sampling', zh: '海洋碳采样与观测网络设计' },
       meta: { en: 'Course project and independent extension · Columbia University · Prof. Galen McKinley · 2025–2026', zh: '课程项目与独立延伸 · 哥伦比亚大学 · Prof. Galen McKinley · 2025–2026' },
       desc: {
-        en: 'Does where we measure ocean CO₂ change reconstruction error? In simulation experiments with CMIP6 truth and SOCAT observing support, historical-density sampling raised MAE by 27.3% versus random at 5,000 samples; adding 1,000 gap-targeted observations cut RMSE by 3.126 µatm, 0.462 µatm more than random additions (five seeds).',
-        zh: '观测位置会影响海洋 CO₂ 重建误差吗？以 CMIP6 为真值、SOCAT 为采样格局的模拟实验中，5,000 个样本时按历史观测密度采样比随机采样的 MAE 高 27.3%；补充 1,000 个空白区观测使 RMSE 降低 3.126 µatm，比随机补充多降 0.462 µatm（5 个随机种子）。',
+        en: 'Does where we measure ocean CO₂ change reconstruction error? In simulation experiments with CMIP6 truth and SOCAT observing support, historical-density sampling raised MAE by 27.3% versus random at 5,000 samples; adding 1,000 gap-targeted observations cut RMSE by 3.126 µatm, 0.462 µatm more than random additions.',
+        zh: '观测位置会影响海洋 CO₂ 重建误差吗？以 CMIP6 为真值、SOCAT 为采样格局的模拟实验中，5,000 个样本时按历史观测密度采样比随机采样的 MAE 高 27.3%；补充 1,000 个空白区观测使 RMSE 降低 3.126 µatm，比随机补充多降 0.462 µatm。',
       },
       tags: ['OSSE', 'CMIP6', 'SOCAT', 'Gradient boosting'],
       demo: 'https://bokaihe.github.io/ocean-carbon-sampling/',
@@ -192,8 +192,8 @@ window.SITE = {
       role: { en: 'Independent research · Columbia University', zh: '独立研究 · 哥伦比亚大学' },
       date: { en: 'Jan 2026 – Aug 2026', zh: '2026.01 – 2026.08' },
       text: {
-        en: 'BDAPPV (France): DeepLabV3 ensemble, projected-area capacity, quality-based abstention and split-conformal intervals, frozen before testing. Across 13 unseen departments, 0.270 kWp MAE and 89.74% coverage for nominal 90% intervals (3.5% abstained), but only 83% for 4–9 kWp and 42% for 9–36 kWp systems.',
-        zh: '法国 BDAPPV 数据：DeepLabV3 集成分割、投影面积换算容量、按质量拒判、分割保形区间，测试前全部冻结。在 13 个未见过的省份上 MAE 0.270 kWp，90% 区间覆盖率 89.74%（拒判 3.5%），但 4–9 kWp 只有 83%，9–36 kWp 只有 42%。',
+        en: 'BDAPPV (France): DeepLabV3 ensemble, projected-area capacity, quality-based abstention and split-conformal intervals. Across 13 unseen departments, 0.270 kWp MAE and 89.74% coverage for nominal 90% intervals (3.5% abstained), but only 83% for 4–9 kWp and 42% for 9–36 kWp systems.',
+        zh: '法国 BDAPPV 数据：DeepLabV3 集成分割、投影面积换算容量、按质量拒判、分割保形区间。在 13 个未见过的省份上 MAE 0.270 kWp，90% 区间覆盖率 89.74%（拒判 3.5%），但 4–9 kWp 只有 83%，9–36 kWp 只有 42%。',
       },
     },
     {
@@ -201,7 +201,7 @@ window.SITE = {
       role: { en: 'Independent research · Columbia University', zh: '独立研究 · 哥伦比亚大学' },
       date: { en: 'Jan 2026 – Aug 2026', zh: '2026.01 – 2026.08' },
       text: {
-        en: 'Adding NIR raised pooled water IoU from 0.37 to 0.72 on Sen1Floods11; in NYC, RGB+NIR detected 9 of 13 FloodNet-observed wet site–dates versus 1 for RGB. A 5 m local-inertia flow model placed ponding near 4 of 5 sensors but underestimated depth.',
+        en: 'Adding NIR raised water IoU from 0.37 to 0.72 on Sen1Floods11; in NYC, RGB+NIR detected 9 of 13 FloodNet-observed wet site–dates versus 1 for RGB. A 5 m local-inertia flow model placed ponding near 4 of 5 sensors but underestimated depth.',
         zh: '在 Sen1Floods11 上加入近红外使水体 IoU 从 0.37 提高到 0.72；在纽约，RGB+NIR 检出 13 个 FloodNet 积水站点-日期中的 9 个，RGB 只有 1 个。5 m 网格的 local-inertia 地表流模型在 5 个传感器中的 4 个附近算出积水，但低估了水深。',
       },
     },
@@ -219,8 +219,8 @@ window.SITE = {
       role: { en: 'Course project and independent extension · Columbia University · Prof. Galen McKinley', zh: '课程项目与独立延伸 · 哥伦比亚大学 · Prof. Galen McKinley' },
       date: { en: 'Feb 2025 – Aug 2026', zh: '2025.02 – 2026.08' },
       text: {
-        en: 'Simulation experiments with CMIP6 truth and SOCAT observing support: historical-density sampling raised MAE by 27.3% versus random; 1,000 gap-targeted additions cut RMSE by 3.126 µatm, 0.462 µatm more than random additions (five seeds).',
-        zh: '以 CMIP6 为真值、SOCAT 为采样格局的模拟实验：按历史观测密度采样比随机采样的 MAE 高 27.3%；补充 1,000 个空白区观测使 RMSE 降低 3.126 µatm，比随机补充多降 0.462 µatm（5 个随机种子）。',
+        en: 'Simulation experiments with CMIP6 truth and SOCAT observing support: historical-density sampling raised MAE by 27.3% versus random; 1,000 gap-targeted additions cut RMSE by 3.126 µatm, 0.462 µatm more than random additions.',
+        zh: '以 CMIP6 为真值、SOCAT 为采样格局的模拟实验：按历史观测密度采样比随机采样的 MAE 高 27.3%；补充 1,000 个空白区观测使 RMSE 降低 3.126 µatm，比随机补充多降 0.462 µatm。',
       },
     },
     {
@@ -228,7 +228,7 @@ window.SITE = {
       role: { en: 'Independent review · Columbia University', zh: '独立综述 · 哥伦比亚大学' },
       date: { en: 'Jan 2026 – Aug 2026', zh: '2026.01 – 2026.08' },
       text: {
-        en: 'Semi-systematic review of 205 appraised full texts; found no support for a universal station-distance threshold or globally superior temperature product, and proposed a layered framework linking representativeness, thermal–electrical propagation, correction and validation. Review manuscript prepared.',
+        en: 'Semi-systematic review of 205 full texts; found no support for a universal station-distance threshold or globally superior temperature product, and proposed a layered framework linking representativeness, thermal–electrical propagation, correction and validation. Review manuscript prepared.',
         zh: '对 205 篇全文的半系统性综述；现有证据不支持通用的站点距离阈值或全球最优温度产品，并提出把代表性、热—电传播、校正和验证串起来的分层框架。已写成综述稿件。',
       },
     },
@@ -237,8 +237,8 @@ window.SITE = {
       role: { en: 'Course project (team lead) and independent extension · Columbia University · Prof. Galen McKinley', zh: '课程项目（组长）与独立延伸 · 哥伦比亚大学 · Prof. Galen McKinley' },
       date: { en: 'Feb 2025 – Aug 2026', zh: '2025.02 – 2026.08' },
       text: {
-        en: 'Course team found about 59% higher Category 3–5 frequency in warm AMO phases (association). Independent rebuild on 979 storms: 16.1 vs 11.0 named storms per year in La Niña vs El Niño seasons (1966–2025), with the track shift decomposed into type-mix and within-type parts.',
-        zh: '课程小组发现 AMO 暖相位时 3–5 级飓风频率约高 59%（相关性）。独立重做 979 个风暴的分析：1966–2025 年拉尼娜季每年 16.1 个命名风暴，厄尔尼诺季 11.0 个，并把路径偏移分解为类型构成和类型内部两部分。',
+        en: 'Course team found about 59% higher Category 3–5 frequency in warm AMO phases. Independent rebuild on 979 storms: 16.1 vs 11.0 named storms per year in La Niña vs El Niño seasons (1966–2025), with the track shift decomposed into type-mix and within-type parts.',
+        zh: '课程小组发现 AMO 暖相位时 3–5 级飓风频率约高 59%。独立重做 979 个风暴的分析：1966–2025 年拉尼娜季每年 16.1 个命名风暴，厄尔尼诺季 11.0 个，并把路径偏移分解为类型构成和类型内部两部分。',
       },
     },
   ],

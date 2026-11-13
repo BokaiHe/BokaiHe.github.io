@@ -67,6 +67,13 @@ window.SITE = {
         ],
         figures: [
           {
+            src: 'plmm-real-leaf.jpg',
+            caption: {
+              en: 'Unmixing real leaf spectra. Left: three tropical species mixed at known proportions (0.50 / 0.30 / 0.20). Right: recovered abundances 0.497 / 0.303 / 0.200, abundance RMSE 0.0023.',
+              zh: '真实叶片光谱解混。左：三个热带树种按已知比例（0.50 / 0.30 / 0.20）混合；右：反演丰度为 0.497 / 0.303 / 0.200，丰度 RMSE 0.0023。',
+            },
+          },
+          {
             src: 'plmm-difficulty.jpg',
             caption: {
               en: 'Controlled experiments. Left: spectral similarity varies at fixed noise. Right: measurement uncertainty varies at fixed spectral shapes.',
